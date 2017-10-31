@@ -64,23 +64,26 @@ body {
   background: #0275d8!important;
 }
 
-.gauge {
+/*.gauge {
   height: 3px;
   position: fixed;
   z-index: 999;
   width: 0;
-  /*left: 50%;
-  transform: translateX(-50%);*/
   background: #000000;
-}
+}*/
 
-#projects_div, #faq_div, #contact_div, #main_div {
+#projects_div, #faq_div, #contact_div, #main_div{
   padding-top: 75px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-#main_div {
+#abstract_div, #team_div {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#main_div, #head_div {
   text-align: center;
 }
 
@@ -99,6 +102,46 @@ body {
   background: rgba(0,0,0,0.5);
   color: white;
   border-radius: 10px;
+}
+
+#elderly_title_div {
+  height: 700px;
+  /*background-image: url("http://2.bp.blogspot.com/-mXm-BxFa7os/VXrctp1CcXI/AAAAAAAALR0/tPjOW6DKaj8/s640/ProjectManagementCertificate_MAIN.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  background: transparent;
+}
+
+#head_div {
+  background-image: url("http://2.bp.blogspot.com/-mXm-BxFa7os/VXrctp1CcXI/AAAAAAAALR0/tPjOW6DKaj8/s640/ProjectManagementCertificate_MAIN.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#team_div, #abstract_div {
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 80%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-left: 10px solid #0275d8;
+}
+
+.member_names {
+  display: inline-block;
+}
+
+.footer {
+  background: #DCDCDC;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  vertical-align: middle;
 }
 
 @media only screen and (max-device-width: 1024px) {

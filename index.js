@@ -38,5 +38,12 @@ $(document).on('click', '.navbar-brand', function (event) {
 });
 
 $('.card-img-overlay').on('click', (e) => {
-  window.location.href = e.target.dataset.link;
+  switch(e.target.dataset.link) {
+    case 'skinzy.html':
+    window.location.href = 'http://www.skinzy.in';
+    break;
+    default:
+    window.location.href = e.target.dataset.link;
+    break;
+  }
 });
