@@ -31,7 +31,7 @@ body {
   font-size: 30px;
 }
 
-.project-contact {
+.project-description {
   position: absolute;
   bottom: 10px;
   transition: left 1s;
@@ -53,6 +53,10 @@ body {
   color: white;
 }
 
+.nav-link.faq-tab {
+  color: #464a4c;
+}
+
 .navbar-brand:hover {
   color: white;
   cursor: pointer;
@@ -72,6 +76,10 @@ body {
   background: #000000;
 }*/
 
+#projects_div {
+  border-top:5px solid black;
+}
+
 #projects_div, #faq_div, #contact_div, #main_div{
   padding-top: 75px;
   padding-left: 15px;
@@ -89,7 +97,7 @@ body {
 
 .parallax {
   height: 700px;
-  background-image: url("http://study.com/cimages/course-image/ohio-assessments-for-educators-computer-technology-subtests-i-ii-practice-study-guide_218362_large.jpg");
+  background-image: url("logo2.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -142,6 +150,28 @@ body {
   text-align: center;
   line-height: 50px;
   vertical-align: middle;
+}
+
+#scroll_down_indicator {
+  text-align: center;
+  position: absolute;
+  z-index: 1000;
+  bottom: 27px;
+  left: 0;
+  right: 0;
+  margin: 0 auto
+}
+
+#scroll_down_text {
+  height: 20px;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+}
+
+#scroll_down_arrow {
+  height: 25px;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
 }
 
 @media only screen and (max-device-width: 1024px) {
